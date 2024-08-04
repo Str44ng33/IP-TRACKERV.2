@@ -20,8 +20,7 @@ pip install --upgrade pip
 pip install Pillow
 
 echo "Dependências instaladas. Para iniciar o aplicativo, execute:"
-echo "source $VENV_DIR/bin/activate"
-echo "python3 arquivo.py"
+source venv/bin/activate
+python3 arquivo.py
 
 echo "Instalação concluída!"
-
