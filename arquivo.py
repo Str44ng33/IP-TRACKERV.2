@@ -74,7 +74,10 @@ def create_gui():
     qr_photo = ImageTk.PhotoImage(image)
     qr_label = tk.Label(root, image=qr_photo, bg='#0d0d0d')
     qr_label.photo = qr_photo
-    qr_label.place(x=250, y=10)
+    qr_label.pack(side=tk.BOTTOM, pady=(0, 10))
+
+    footer_label = tk.Label(root, text="Feito por Matheus 802 CMM", bg='#0d0d0d', fg='white', font=('Roboto', 12))
+    footer_label.pack(side=tk.BOTTOM, pady=(0, 10))
 
     ip_label = tk.Label(root, text="Digite o IP:", bg='#0d0d0d', fg='white', font=('Roboto', 14))
     ip_label.pack(pady=10)
@@ -88,10 +91,6 @@ def create_gui():
     result_label = tk.Label(root, text="", bg='#0d0d0d', fg='white', font=('Roboto', 12))
     result_label.pack(pady=10)
 
-    footer_label = tk.Label(root, text="Feito por Matheus 802 CMM", bg='#0d0d0d', fg='white', font=('Roboto', 12))
-    footer_label.pack(side=tk.BOTTOM, pady=10)
-
     root.mainloop()
 
 create_gui()
-
